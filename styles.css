@@ -1,8 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
     margin: 0;
-    ms-overflow-style: none;  
     scrollbar-width: none; 
 }
 
@@ -17,7 +22,7 @@ a {
     color: black;
 }
 
-p {
+p, ul {
     font-family: 'Merriweather Sans', sans-serif;
 }
 
@@ -109,7 +114,7 @@ h2 {
     background-color: white;
     height: 4vh;
     padding: 2vh;
-    gap: 2vh;
+    gap: 1vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +122,7 @@ h2 {
 
 .transition img {
     margin: 0;
-    width: 2vw;
+    width: 2vh;
 }
 
 .transition p {
@@ -162,6 +167,59 @@ h2 {
     gap: 10vh;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
+}
+
+.hotline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hotline ul {
+    padding: 0;
+    margin: 1vh 0 0 0;
+}
+
+.hotline p {
+    padding: 0;
+    margin: 1vh 0 0 0;
+    text-align: center;
+}
+
+.hotline-img {
+    position: relative;
+    width: 75%;
+}
+
+.hotline-img img {
+    width: 100%;
+    height: auto;
+}
+
+.hotline-img .btn {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    padding: 18px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.hotline-img .btn hover {
+    background-color: black;
+}
+
 @media only screen and (min-width: 532px) {
     .center {
         width: 100%;
@@ -197,9 +255,27 @@ h2 {
     .nav {
         font-size: 1.5em;
     }
+
+    .contact {
+        padding-bottom: 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1vw;
+    }
+
+    .hotline-img {
+        position: relative;
+        width: 85%;
+    }
 }
 
 @media only screen and (min-width: 992px) {
+    body {
+        gap: 4vw;
+    }
+
     .center {
         width: 100%;
         gap: 2vw;
@@ -232,5 +308,34 @@ h2 {
     .nav input {
         width: 4vw;
     }
+    
+    .transition {
+        padding: 2vh 0 0 0;
+    }
 
+    .contact {
+        gap: 1vw;
+    }
+
+    .hotline-img {
+        position: relative;
+        width: 80%;
+    }
+
+    .hotline p, ul {
+        font-size: 1em;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .hotline p, ul {
+            font-size: 1.2em;
+        }
+    }
+
+    @media only screen and (max-height: 1000px) {
+        .hotline p, ul {
+            font-size: 1em;
+        }
+    }
+    
 }

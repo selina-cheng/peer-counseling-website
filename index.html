@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&family=Volkhov&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
     <title>RHS Support Resources</title>
 </head>
 <body>
@@ -29,7 +30,7 @@
         
         <div class="nav">
             <div class="category">
-                <input type="image" src="imgs\nav\phone-call.png">
+                <input type="image" onclick="location.href='#contact';" src="imgs\nav\phone-call.png">
                 <p>Talk to someone.</p>
             </div>
             <div class="category">
@@ -56,6 +57,48 @@
         </div> 
     </div>
 
+    <!-- page 2 -->
+    <div class="contact" id="contact">
+        <div class="hotline">
+            <div class="hotline-img">
+                <img src="imgs\hotlines full\trevorproject.png">
+                <input type="button" onclick="window.open('https://www.thetrevorproject.org','_blank')" class="btn" value="CALL"/>
+            </div>
+            <p>The Trevor Project is</p>
+            <ul>
+                <li>For LGBTQ Support</li>
+                <li>24/7/365</li>
+                <li>Nationwide</li>
+                <li>Free and confidential</li> 
+            </ul>
+        </div>
+        <div class="hotline">
+            <div class="hotline-img">
+                <img src="imgs\hotlines full\suicide-lifeline.png">
+                <input type="button" onclick="window.open('https://988lifeline.org/','_blank')" class="btn" value="CALL"/>
+            </div>
+            <p>The Suicide and Crisis Lifeline is</p>
+            <ul>
+                <li>Available for everyone</li>
+                <li>24/7/365</li>
+                <li>Nationwide</li>
+                <li>Free and confidential</li> 
+            </ul>
+        </div>
+        <div class="hotline">
+            <div class="hotline-img">
+                <img src="imgs\hotlines full\crisis-text-line.png">
+                <input type="button" onclick="window.open('https://www.crisistextline.org/','_blank')" class="btn" value="TEXT"/>
+            </div>
+            <p>The Crisis Text Line is</p>
+            <ul>
+                <li>Available for everyone</li>
+                <li>24/7/365</li>
+                <li>Nationwide</li>
+                <li>Free and confidential</li> 
+            </ul>
+        </div>
+    </div>
 
 </body>
 </html>
