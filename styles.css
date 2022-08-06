@@ -3,10 +3,6 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     scrollbar-width: none; 
 }
@@ -32,6 +28,7 @@ p, ul {
     width: 100vw;
     background-color: #D0D9BE;
     flex-direction: column;
+    margin: 0 0 15vw 0;
 }
 
 .home {
@@ -172,6 +169,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     gap: 4vh;
+    z-index: 50;
 }
 
 .hotline {
@@ -193,7 +191,7 @@ h2 {
 
 .hotline-img {
     position: relative;
-    width: 75%;
+    width: 75vw;
 }
 
 .hotline-img img {
@@ -272,14 +270,10 @@ h2 {
 }
 
 @media only screen and (min-width: 992px) {
-    body {
-        gap: 4vw;
-    }
 
     .center {
         width: 100%;
         gap: 2vw;
-        padding-bottom: 5vh;
         display: flex;
         flex-direction: row; 
     }
