@@ -1,0 +1,236 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    ms-overflow-style: none;  
+    scrollbar-width: none; 
+}
+
+/* Hiding scroll bars */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.start {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #D0D9BE;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 92vh;
+    margin: 3vh;
+}
+
+.credits {
+    display: flex;
+    justify-content: right;
+    direction: rtl;
+    gap: 3vw;
+    align-items: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.center {
+    width: 100%;
+    gap: 2vw;
+    padding-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Volkhov', serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-family: 'Volkhov', serif;
+    margin: 0;
+}
+
+.title {
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#cover {
+    width: 70vw;
+}
+
+.nav {
+    display: flex;
+    font-family: 'Merriweather Sans', sans-serif;
+    justify-content: space-around;
+    background-color: #D0D9BE;
+}
+
+.nav p {
+    font-size: 0.7em;
+}
+
+.nav input {
+    width: 7vw;
+}
+
+.category {
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#logo {
+    width: 10vw;
+}
+
+
+.transition {
+    background-color: white;
+    height: 4vh;
+    padding: 2vh;
+    gap: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transition img {
+    margin: 0;
+    width: 2vw;
+}
+
+.transition p {
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.about-text p {
+    text-align: center;
+}
+
+.about-text a,
+#back-button {
+    text-align: center;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+#back-button {
+    font-size: 1.5em;
+}
+
+#about-body {
+    background-color: #889962;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vh;
+}
+
+@media only screen and (min-width: 532px) {
+    .center {
+        width: 100%;
+        gap: 2vw;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .title {
+        margin-left: 3vw;
+        display: flex;
+    }
+
+    #cover {
+        width: 60vw;
+    }
+
+    #logo {
+        width: 5vw;
+    }
+
+    .credits {
+        gap: 2vh;
+        justify-content: left;
+        direction: ltr;
+    }
+
+    .nav input {
+        width: 6vw;
+    }
+
+    .nav {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .center {
+        width: 100%;
+        gap: 2vw;
+        padding-bottom: 5vh;
+        display: flex;
+        flex-direction: row; 
+    }
+
+    .title {
+        margin-left: 3vw;
+        display: flex;
+    }
+
+    #cover {
+        width: 60vh;
+    }
+
+    #logo {
+        width: 4vw;
+    }
+
+    .credits {
+        width: 98%;
+        margin: 2vh;
+        gap: 2vh;
+        justify-content: left;
+        direction: ltr;
+    }
+
+    .nav input {
+        width: 4vw;
+    }
+
+}
