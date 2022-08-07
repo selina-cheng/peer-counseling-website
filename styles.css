@@ -136,6 +136,11 @@ h2 {
     color: white;
 }
 
+#about-body {
+    width: 100vw;
+    height: 100vh;
+}
+
 .about-text h1 {
     font-size: 2em;
     text-align: center;
@@ -165,11 +170,12 @@ h2 {
 }
 
 .contact {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4vh;
-    z-index: 50;
+    margin-bottom: 3vh;
 }
 
 .hotline {
@@ -264,8 +270,13 @@ h2 {
     }
 
     .hotline-img {
-        position: relative;
         width: 85%;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hotline {
+        top: 15vw;
     }
 }
 
@@ -309,6 +320,7 @@ h2 {
 
     .contact {
         gap: 1vw;
+        height: 100vh;
     }
 
     .hotline-img {
@@ -330,10 +342,6 @@ h2 {
         .hotline p, ul {
             font-size: 1em;
         }
-    }
-
-    @media only screen and (min-width: 1170px) and (min-height: 2532px) {
-        
     }
     
 }
